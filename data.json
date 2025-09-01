@@ -1,0 +1,16 @@
+{
+  "aiModel": "gemini",
+  "geminiApiKey": "",
+  "claudeApiKey": "",
+  "gptApiKey": "",
+  "sourceFolder": "",
+  "useAutoDetection": true,
+  "targetFolders": [
+    "Algorithmique",
+    "Automatique",
+    "Maths",
+    "TP",
+    "Electronique"
+  ],
+  "maxWorkers": 10
+}
