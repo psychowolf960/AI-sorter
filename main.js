@@ -312,7 +312,7 @@ class SortConfirmationModal extends Modal {
 		});
 		
 		contentEl.createEl('p', { 
-			text: 'Files will be moved permanently. Make sure you have a backup if needed.' 
+			text: 'Files will be moved permanently.' 
 		});
 
 		const buttonContainer = contentEl.createDiv({ cls: 'modal-button-container' });
@@ -388,7 +388,7 @@ class AISorterSettingTab extends PluginSettingTab {
 				.setName('Claude API Key')
 				.setDesc('Enter your Anthropic Claude API key')
 				.addText(text => text
-					.setPlaceholder('Enter your Claude API key')
+					.setPlaceholder('Claude API key')
 					.setValue(this.plugin.settings.claudeApiKey)
 					.onChange(async (value) => {
 						this.plugin.settings.claudeApiKey = value;
@@ -401,7 +401,7 @@ class AISorterSettingTab extends PluginSettingTab {
 				.setName('OpenAI API Key')
 				.setDesc('Enter your OpenAI API key')
 				.addText(text => text
-					.setPlaceholder('Enter your OpenAI API key')
+					.setPlaceholder('OpenAI API key')
 					.setValue(this.plugin.settings.gptApiKey)
 					.onChange(async (value) => {
 						this.plugin.settings.gptApiKey = value;
